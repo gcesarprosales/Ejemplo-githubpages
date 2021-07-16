@@ -1,0 +1,79 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  border-bottom: solid #FFE194;
+  font-weight: bolder;
+}
+
+body{
+  background-color: #E8F6EF;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/*Header*/
+header{
+  background-color: #B8DFD8;
+  padding: 18px;
+  position: fixed; /*para que el header se quede anclado arriba*/
+  top: 0px;  /*Con position fixed tenemos que definir en donde queremos que se posicione*/
+  width: 100%;
+}
+
+nav{
+  display: inline-block;
+  padding: 1px;
+}
+
+.logo{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  }
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/*footer*/
+footer{
+  background-color: #B8DFD8;
+}
+
+
+/*main*/
+main{
+  height: 200vh;
+  border: solid red;
+  margin-top: 10vh;
+}
+
+.footer__redes-sociales{
+  margin: auto;
+  text-align: center;
+}
+.footer__redes-sociales li{
+  border: solid red;
+  display: inline-block;
+  position: relative;
+}
+
+/*media Queries, nos sirven para cambiar el orden de los elemento dependiendo del tamaño de la pantalla*/
+@media only screen and (min-width: 992px){
+  body{
+    background-color: #4C4C6D;
+  }
+}
+
